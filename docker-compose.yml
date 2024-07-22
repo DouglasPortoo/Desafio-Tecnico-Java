@@ -1,0 +1,12 @@
+version: '4.32.0'
+
+services:
+  postgres:
+    container_name: java_estagio
+    image: postgres
+    ports:
+      - 5432:5432
+    environment:
+    - POSTGRES_USER=admin
+    - POSTGRES_PASSWORD=admin
+    - POSTGRES_DB=eclipse_hotel
